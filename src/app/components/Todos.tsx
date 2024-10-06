@@ -24,7 +24,7 @@ export default function Todos() {
 
   useEffect(() => {
     setLoading(true)
-    // @ts-expect-error
+    // @ts-expect-error An error is expected on tgis line
     const existingTodos = JSON.parse(localStorage.getItem('todos'))
     if (existingTodos) {
       setTodos(existingTodos)
