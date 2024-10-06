@@ -7,7 +7,7 @@ type ModalPropType = {
   handleSave: (todo: Todo) => void
 }
 
-export default ({ isOpen, onClose, handleSave }: ModalPropType) => {
+const Modal = ({ isOpen, onClose, handleSave }: ModalPropType) => {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
 
@@ -97,3 +97,5 @@ export default ({ isOpen, onClose, handleSave }: ModalPropType) => {
     </div>
   )
 }
+
+export default Modal
