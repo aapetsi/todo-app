@@ -24,7 +24,7 @@ export default function Todos() {
 
   useEffect(() => {
     setLoading(true)
-    // @ts-ignore
+    // @ts-expect-error
     const existingTodos = JSON.parse(localStorage.getItem('todos'))
     if (existingTodos) {
       setTodos(existingTodos)

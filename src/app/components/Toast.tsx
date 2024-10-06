@@ -5,7 +5,7 @@ type ToastPropType = {
   variant: string
 }
 
-export default function ({ message, isVisible, onClose, variant }: ToastPropType) {
+const Toast = ({ message, isVisible, onClose, variant }: ToastPropType) => {
   return (
     isVisible && (
       <div
@@ -24,3 +24,5 @@ export default function ({ message, isVisible, onClose, variant }: ToastPropType
     )
   )
 }
+
+export default Toast
